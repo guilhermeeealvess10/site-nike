@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica', Arial, sans-serif;
+}
+
+/* Layout Fluido com Flexbox */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%; /* Porcentagem para fluidez */
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.hero {
+    background-color: #EA991C; /* Laranja do seu Figma */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 5%;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.card {
+    flex: 1; /* Ocupa espaço proporcional */
+    max-width: 350px;
+}
+
+.card img {
+    width: 100%; /* Imagem fluida dentro do card */
+    border-radius: 10px;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 30px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-primary { background-color: #fff; color: #000; }
+.btn-secondary { background-color: #000; color: #fff; }
